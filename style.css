@@ -1,0 +1,310 @@
+.body{
+    margin: 0;
+}
+.header {
+    text-align: center; /* Alinear el texto al centro */
+    padding: 20px;
+    background-color:#f3f1ed;
+}
+
+.left-menu,
+.logo,
+.right-menu {
+    display: inline-block; /* Mostrar elementos en línea */
+    vertical-align: middle; /* Alinear verticalmente al centro */
+}
+
+.left-menu ul,
+.right-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+     /* Color de fondo */
+    padding: 10px;
+}
+
+.left-menu ul li,
+.right-menu ul li {
+    display: inline;
+}
+
+.left-menu ul li a,
+.right-menu ul li a {
+    text-decoration: none;
+    color: #4C423A;
+    font-family: "Playfair Display", serif; 
+    font-size: 18px;
+    margin-right: 15px;
+}
+.imagen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-wrap: wrap;
+}
+
+.logo img {
+    max-width: 110%;
+    height: auto;
+}
+
+.redes-sociales {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.redes-sociales a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.redes-sociales img {
+    width: 30px;
+    height: 30px;
+}
+.divider {
+    width: 100%; /* Ancho de la línea */
+    height: 1px; /* Altura de la línea */
+    background-color: black; /* Color de la línea */
+    margin: 0; /* Ajuste de margen */
+}
+.contenedor4{
+    display: flex;
+    height: 70vh;
+    width: 100vw;
+    flex-direction: column; /* Apila los elementos verticalmente *//* Alinear los elementos a la izquierda */
+    background-position: center;
+    background-color: #f3f1ed ;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    
+}
+.contenedor4 img {
+    width: 80%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: 80%; /* La imagen ocupará el 100% del alto del contenedor */
+     /* Escalar la imagen para que cubra el contenedor */
+}
+.contenedor{
+    display: flex;
+    background-color: #f3f1ed;   
+    height: 100vh;
+    width: 100vw;
+    flex-direction: row ;
+    background-image: url('Imagenes/-07.png'); 
+    background-size: cover; /* Escalar la imagen para cubrir todo el contenedor */
+    background-position: center;
+}
+.contenedor5{
+    display: flex;
+    background-color: #f3f1ed;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: row;
+    background-image: url(); /* Ruta de la imagen */
+    background-size: cover; /* Escalar la imagen para cubrir todo el contenedor */
+    background-position: center;
+    flex-wrap: wrap;
+}
+.contenedor2{
+    display: flex;
+    background-color: #f3f1ed;
+    height: 50vh;
+    width: 100vw;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center; /* Centra horizontalmente en el eje X */
+    justify-content: center;
+    flex-direction: column;
+}
+.contenedor2 h4{
+    font-size: 34px;
+    font-family: 'Great Vibes',handwriting;
+    color: #C1995C;
+}
+.contenedor2 h1{
+    font-size: 100px;
+    font-family: 'Great Vibes',handwriting;
+    color: #4C423A;
+}
+
+.contenedor3{
+    
+    background-color: rgb(0, 255, 136);
+    height: 70vh;
+    width: 100vw;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-image: url('Imagenes/tortablanca.jpg'); 
+    background-size: cover ; 
+    background-position: center;
+    text-align: right;
+}
+.subcontenedor1 {
+    width: 70vh; /* El 40% del alto de la pantalla */
+    height: 50vh;
+    margin-top: 15%;
+    margin-left: 150px;
+    background-color: #f3f1ed;
+
+}
+.subcontenedor1 img {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: 100%; /* La imagen ocupará el 100% del alto del contenedor */
+    object-fit: cover; 
+/* Escalar la imagen para que cubra el contenedor */
+}
+
+.subcontenedor2 {
+    background-color: #f3f1ed;
+    width: 60vh; /* El 40% del alto de la pantalla */
+    height: 60vh;
+    margin-left: 14%;
+    margin-top: 7%;
+    
+}
+.subcontenedor2 img {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: 100%; /* La imagen ocupará el 100% del alto del contenedor */
+    object-fit: cover; /* Escalar la imagen para que cubra el contenedor */
+}
+.subcontenedor3 {
+    background-color: #f3f1ed;
+    width: 45vh; /* El 40% del alto de la pantalla */
+    height: 40vh;
+    margin-top: 20%;
+    margin-left: 180px;
+}
+.subcontenedor4 {
+    background-color: #f3f1ed;
+    width: 45vh; /* El 40% del alto de la pantalla */
+    height: 40vh;
+    margin-top: 10%;
+    margin-left: 180px;
+}
+.subcontenedor5 {
+    background-color: #f3f1ed;
+    width: 45vh; /* El 40% del alto de la pantalla */
+    height: 40vh;
+    margin-top: 20%;
+    margin-left: 180px;
+
+}
+.subcontenedor6 {
+    flex: 1;
+    height: 100vh;
+    width: 50vh; /* Altura de los subcontenedores (ajusta según sea necesario) */ /* Margen entre los subcontenedores */
+    background-color: white;
+/* Color de fondo de los subcontenedores (opcional) */
+}
+.subcontenedor6 img{
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: 100%; /* La imagen ocupará el 100% del alto del contenedor */
+    object-fit: contain
+
+}
+.subcontenedor7 {
+    flex: 1;
+    height: 100vh;
+    width: 50vh; /* Altura de los subcontenedores (ajusta según sea necesario) */ /* Margen entre los subcontenedores */
+    background-color: #757887;
+   /* Color de fondo de los subcontenedores (opcional) */
+}
+.subcontenedor8 {
+    flex: 1;
+    height: 80vh;
+    width: 60vh; /* Altura de los subcontenedores (ajusta según sea necesario) */ /* Margen entre los subcontenedores */
+    margin-top: 10%;
+    margin-left: 20%; 
+  /* Color de fondo de los subcontenedores (opcional) */
+}
+.subcontenedor3 img {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: 100%; /* La imagen ocupará el 100% del alto del contenedor */
+    object-fit: cover; /* Escalar la imagen para que cubra el contenedor */
+}
+
+.subcontenedor4 img {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: 100%; /* La imagen ocupará el 100% del alto del contenedor */
+    object-fit: cover; /* Escalar la imagen para que cubra el contenedor */
+}
+.subcontenedor5 img {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: 100%; /* La imagen ocupará el 100% del alto del contenedor */
+    object-fit: cover; /* Escalar la imagen para que cubra el contenedor */
+}
+.subcontenedor8 img {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: 100%; /* La imagen ocupará el 100% del alto del contenedor */
+    object-fit: cover; /* Escalar la imagen para que cubra el contenedor */
+}
+
+@media (max-width: 768px) {
+    .left-menu,
+    .right-menu {
+        display: block; /* Cambiar a bloque para ocupar toda la anchura */
+        text-align: center; /* Centrar el contenido */
+        margin-bottom: 10px; /* Agregar un espacio entre los elementos */
+    }
+
+    .left-menu ul,
+    .right-menu ul {
+        padding: 10px 0; /* Ajustar el relleno */
+    }
+
+    .left-menu ul li,
+    .right-menu ul li {
+        display: block; /* Cambiar a bloque para ocupar toda la anchura */
+        margin-right: 0; /* Quitar el margen derecho */
+        margin-bottom: 5px; /* Agregar un espacio entre los elementos */
+    }
+    .contenedor4{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .contenedor2{
+        flex-direction: row;
+        width: 100%;
+        height: 50%;
+    }
+    .contenedor {
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .contenedor3,.contenedor5{
+        display: block;
+        flex-direction: column;
+        height: 30%;
+        width: 100%;
+    }
+    .subcontenedor1,.subcontenedor2{
+        margin-top: 0;
+        margin-left: 0;
+        width: 100%;
+        height: 50%
+    }
+    .subcontenedor3,.subcontenedor4,.subcontenedor5{
+        margin-top: 0;
+        margin-left: 0;
+        width: 100%;
+        height: 33.3333%
+    } 
+    .subcontenedor6,.subcontenedor7{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .subcontenedor8{
+        margin-left: 0;
+        margin-top: 30%;
+        width: 100%;
+        height: 100%;
+    }
+    
+}

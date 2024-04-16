@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+}
+.header {
+    text-align: center; /* Alinear el texto al centro */
+    padding: 20px;
+    background-color:white;
+}
+
+.left-menu,
+.logo,
+.right-menu {
+    display: inline-block; /* Mostrar elementos en línea */
+    vertical-align: middle; /* Alinear verticalmente al centro */
+}
+
+.left-menu ul,
+.right-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+     /* Color de fondo */
+    padding: 10px;
+}
+
+.left-menu ul li,
+.right-menu ul li {
+    display: inline;
+}
+
+.left-menu ul li a,
+.right-menu ul li a {
+    text-decoration: none;
+    color: #4C423A;
+    font-family: "Playfair Display", serif; 
+    font-size: 18px;
+    margin-right: 20px;
+}
+.imagen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo img {
+    max-width: 110%;
+    height: auto;
+}.redes-sociales {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.redes-sociales a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.redes-sociales img {
+    width: 30px;
+    height: 30px;
+}
+.contenedor1{
+    
+    display: flex;
+    background-color: #f4dada;
+    height: 40vh;
+    width: 100vw;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center; /* Centra horizontalmente en el eje X */
+    justify-content: center;
+    flex-direction: column;
+}
+.contenedor2{
+    display: flex;
+    background-color: rgb(10, 10, 10);
+    height: 60vh;
+    width: 100vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.contenedor3{
+    display: flex;
+    background-color: green;
+    height: 60vh;
+    width: 100vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.subcontenedor1 {
+    display: flex;
+    background-color: red;
+    height: 50vh;
+    width: 48vw;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 1.5%;
+    margin-top: 2%; /* Para que los elementos se envuelvan en múltiples líneas */
+}
+.subcontenedor2{
+    display: flex;
+    background-color: wheat;
+    height: 50vh;
+    width: 60vw;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 20%;
+    margin-top: 2%;
+}
+.subcontenedor2 img {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: 100%; /* La imagen ocupará el 100% del alto del contenedor */
+    object-fit: cover; /* Escalar la imagen para que cubra el contenedor */
+}
+.subcontenedor3{
+    display: flex;
+    background-color: blue;
+    height: 20vh;
+    width: 40vw;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.formulario {
+    background-color: white; /* Color de fondo del formulario */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    height: 100%; /* Altura del 100% del contenedor */
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.fila {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+.campo {
+    flex: 1;
+    margin-right: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 100px; /* Altura del área de texto */
+}
+
+button {
+    width: 100px; /* Ancho del botón */
+    margin: 0 auto; /* Centrar el botón */
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .left-menu,
+    .right-menu {
+        display: block; /* Cambiar a bloque para ocupar toda la anchura */
+        text-align: center; /* Centrar el contenido */
+        margin-bottom: 10px; /* Agregar un espacio entre los elementos */
+    }
+
+    .left-menu ul,
+    .right-menu ul {
+        padding: 10px 0; /* Ajustar el relleno */
+    }
+
+    .left-menu ul li,
+    .right-menu ul li {
+        display: block; /* Cambiar a bloque para ocupar toda la anchura */
+        margin-right: 0; /* Quitar el margen derecho */
+        margin-bottom: 5px; /* Agregar un espacio entre los elementos */
+    }
+    .contenedor1 {
+        flex-direction: column;
+    }
+    .contenedor2  {
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+    }
+    .contenedor3{
+        flex-direction: row;
+        width: 100%;
+        height: 50%;
+    }
+
+    .subcontenedor1,.subcontenedor2 {
+        width: 100%;
+    }
+    .subcontenedor2{
+        margin-left: 0;
+    }
+    .subcontenedor3{
+        width: 100%;
+        margin-left: 0;
+    }
+    .producto {
+        width: 20%;
+    }
+    .descripcion {
+        width: 75%;
+    }
+}
