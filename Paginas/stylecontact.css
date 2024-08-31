@@ -1,10 +1,7 @@
-body {
-    margin: 0;
-}
 .header {
     text-align: center; /* Alinear el texto al centro */
     padding: 20px;
-    background-color:white;
+    background-color:#f3f1ed;
 }
 
 .left-menu,
@@ -44,9 +41,10 @@ body {
 }
 
 .logo img {
-    max-width: 110%;
+    max-width: 50%;
     height: auto;
-}.redes-sociales {
+}
+.redes-sociales {
     text-align: center;
     margin-top: 20px;
 }
@@ -60,10 +58,17 @@ body {
     width: 30px;
     height: 30px;
 }
+.subcontenedor4 h2{
+font-family: "Times New Roman", serif;
+    color: #6d534c;
+}
+.subcontenedor5 h3{
+    font-family: "Times New Roman", serif;
+    color: #6d534c;
+}
 .contenedor1{
-    
     display: flex;
-    background-color: #f4dada;
+    background-color: #f3f1ed;
     height: 40vh;
     width: 100vw;
     flex-wrap: wrap;
@@ -74,112 +79,84 @@ body {
 }
 .contenedor2{
     display: flex;
-    background-color: rgb(10, 10, 10);
-    height: 60vh;
+    background-color: #f3f1ed;
+    height: 100vh;
     width: 100vw;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-}
-.contenedor3{
-    display: flex;
-    background-color: green;
-    height: 60vh;
-    width: 100vw;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-}
-.subcontenedor1 {
-    display: flex;
-    background-color: red;
-    height: 50vh;
-    width: 48vw;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-left: 1.5%;
-    margin-top: 2%; /* Para que los elementos se envuelvan en múltiples líneas */
+
+}
+
+.contenedor3{
+    display: flex;
+    background-color: #f3f1ed;
+    height: 40vh;
+    width: 100vw;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.subcontenedor1{
+    display: flex;
+    background-color: #f3f1ed;
+    margin-left: 5%;
+    margin-top: 2.5%;
+    height: 90vh;
+    width: 40vw;
+    flex-direction: row;
+    flex-wrap: wrap; 
 }
 .subcontenedor2{
     display: flex;
-    background-color: wheat;
-    height: 50vh;
-    width: 60vw;
+    background-color: #f3f1ed;
+    height: 70vh;
+    width: 40vw;
     flex-direction: column;
-    flex-wrap: wrap;
-    margin-left: 20%;
-    margin-top: 2%;
+    flex-wrap: wrap; 
 }
-.subcontenedor2 img {
-    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
-    height: 100%; /* La imagen ocupará el 100% del alto del contenedor */
-    object-fit: cover; /* Escalar la imagen para que cubra el contenedor */
+.subcontenedor2 img{
+    
+    width: 100%; /* Esto hace que la imagen ocupe todo el ancho del contenedor */
+    height: 100%; 
 }
+.subcontenedor1 img{
+    
+    width: 100%; /* Esto hace que la imagen ocupe todo el ancho del contenedor */
+    height: 100%;
+} 
+
+
 .subcontenedor3{
     display: flex;
-    background-color: blue;
+    background-color: #f3f1ed;
     height: 20vh;
     width: 40vw;
     flex-direction: column;
-    flex-wrap: wrap;
-    margin-left: 5%;
-    margin-top: 2%;
+    flex-wrap: wrap; 
 }
-.formulario {
-    background-color: white; /* Color de fondo del formulario */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
-    height: 100%; /* Altura del 100% del contenedor */
-}
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.fila {
+.subcontenedor4{
     display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 15px;
+    background-color: #f3f1ed;
+    height: 20vh;
+    width: 15vw;
+    flex-direction: column;
+    flex-wrap: wrap; 
 }
-.campo {
-    flex: 1;
-    margin-right: 10px;
+.subcontenedor5{
+    display: flex;
+    background-color: #f3f1ed;
+    height: 20vh;
+    width: 25vw;
+    flex-direction: column;
+    flex-wrap: wrap; 
 }
-
-label {
-    display: block;
-    font-weight: bold;
+.subcontenedor6{
+    display: flex;
+    background-color: #f3f1ed;
+    margin-left: 5%;
+    height: 40vh;
+    width: 40vw;
+    flex-wrap: wrap; 
 }
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-textarea {
-    height: 100px; /* Altura del área de texto */
-}
-
-button {
-    width: 100px; /* Ancho del botón */
-    margin: 0 auto; /* Centrar el botón */
-    padding: 10px;
-    background-color: #007bff;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
 @media (max-width: 768px) {
     .left-menu,
     .right-menu {
@@ -200,33 +177,59 @@ button:hover {
         margin-bottom: 5px; /* Agregar un espacio entre los elementos */
     }
     .contenedor1 {
-        flex-direction: column;
-    }
-    .contenedor2  {
         flex-direction: row;
+        height: 40%;
         width: 100%;
-        height: 100%;
+    
     }
-    .contenedor3{
+    .contenedor2{    
+        flex-direction: row;
+        height: 170%;
+        width: 100%;
+    }
+    .subcontenedor1{
+        margin-top: 0;
+        margin-left: 0;
         flex-direction: row;
         width: 100%;
         height: 50%;
     }
-
-    .subcontenedor1,.subcontenedor2 {
-        width: 100%;
-    }
     .subcontenedor2{
+        margin-top: 0;
         margin-left: 0;
+        flex-direction: row;
+        width: 100%;
+        height: 60%
+
     }
     .subcontenedor3{
-        width: 100%;
+        margin-top: 0;
         margin-left: 0;
+        flex-direction: row;
+        width: 100%;
+        height: 40%;
+        
     }
-    .producto {
-        width: 20%;
+    .subcontenedor4,.subcontenedor5{
+        margin-top: 0;
+        margin-left: 0;
+        flex-direction: row;
+        width: 100%;
+        height: 50%;
     }
-    .descripcion {
-        width: 75%;
+    .subcontenedor6{
+        flex-direction: row;
+        height: 50%;
+        width: 100%;
+    }
+    .subcontenedor5 h3{
+        font-family: "Times New Roman", serif;
+        color: #6d534c;
+        font-size: 17px;
+    }
+    .subcontenedor6 h3{
+        font-family: "Times New Roman", serif;
+        color: #6d534c;
+        font-size: 14px;
     }
 }
