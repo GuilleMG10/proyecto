@@ -1,13 +1,9 @@
-
-body {
-    margin: 0;
-}
-
 .header {
     text-align: center; /* Alinear el texto al centro */
     padding: 20px;
     background-color:#f3f1ed;
 }
+
 .left-menu,
 .logo,
 .right-menu {
@@ -45,7 +41,7 @@ body {
 }
 
 .logo img {
-    max-width: 110%;
+    max-width: 50%;
     height: auto;
 }
 .redes-sociales {
@@ -62,6 +58,14 @@ body {
     width: 30px;
     height: 30px;
 }
+.subcontenedor4 h2{
+font-family: "Times New Roman", serif;
+    color: #6d534c;
+}
+.subcontenedor5 h3{
+    font-family: "Times New Roman", serif;
+    color: #6d534c;
+}
 .contenedor1{
     display: flex;
     background-color: #f3f1ed;
@@ -76,94 +80,82 @@ body {
 .contenedor2{
     display: flex;
     background-color: #f3f1ed;
-    height: 80vh;
+    height: 100vh;
     width: 100vw;
     flex-direction: column;
     flex-wrap: wrap;
 
 }
+
 .contenedor3{
     display: flex;
     background-color: #f3f1ed;
-    height: 110vh;
+    height: 40vh;
     width: 100vw;
     text-align: center;
     flex-wrap: wrap;
-    flex-direction: row ;
 }
-
-.subcontenedor1 {
+.subcontenedor1{
     display: flex;
     background-color: #f3f1ed;
-    height: 80vh;
-    width: 45vw;
+    margin-left: 5%;
+    margin-top: 2.5%;
+    height: 90vh;
+    width: 40vw;
+    flex-direction: row;
+    flex-wrap: wrap; 
+}
+.subcontenedor2{
+    display: flex;
+    background-color: #f3f1ed;
+    height: 70vh;
+    width: 40vw;
     flex-direction: column;
-    flex-wrap: wrap;
-    margin-left: 5%; /* Para que los elementos se envuelvan en múltiples líneas */
-}
-.subcontenedor2 {
-    display: flex;
-    background-color: #f3f1ed;
-    height: 110vh;
-    width: 50vw;
-    box-sizing: border-box; /* Incluir el padding y el border en el ancho y la altura */
-    flex-wrap: wrap;
-    
-}
-.producto {
-    height: 20vh;
-    width: 8vw; /* Establecer la altura de los elementos en un 25% para cuatro filas */
-    box-sizing: border-box; /* Incluir el padding y el border en el ancho y la altura */
-    background-color: #f3f1ed;
-    flex-wrap: wrap; /* Borde para visualización */
-}
-.producto img{
-    max-width: 110%;
-    height: 100%;
-    width: 100%;
-}
-.descripcion{
-    display: flex;
-    height: 20vh;
-    width: 35vw; /* Establecer la altura de los elementos en un 25% para cuatro filas */
-    box-sizing: border-box; /* Incluir el padding y el border en el ancho y la altura */
-    background-color: #f3f1ed;
-    flex-wrap: wrap;
-}
-.descripcion h4 {
-    color: grey; /* Cambia 'blue' al color que desees */
-}
-.descripcion h2 {
-    font-family: "Playfair Display", serif; 
-    font-size: 30px; /* Cambia 'blue' al color que desees */
+    flex-wrap: wrap; 
 }
 .subcontenedor2 img{
-    margin-top: 5%;
-    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
-    height: 80%; /* La imagen ocupará el 100% del alto del contenedor */
-    object-fit: contain
+    
+    width: 100%; /* Esto hace que la imagen ocupe todo el ancho del contenedor */
+    height: 100%; 
+}
+.subcontenedor1 img{
+    
+    width: 100%; /* Esto hace que la imagen ocupe todo el ancho del contenedor */
+    height: 100%;
+} 
 
+
+.subcontenedor3{
+    display: flex;
+    background-color: #f3f1ed;
+    height: 20vh;
+    width: 40vw;
+    flex-direction: column;
+    flex-wrap: wrap; 
 }
-.subcontenedor7 {
-    margin-top: 3%;
-    flex: 1;
-    height: 100vh;
-    width: 50vh; /* Altura de los subcontenedores (ajusta según sea necesario) */ /* Margen entre los subcontenedores */
-    background-color: #757887;
-   /* Color de fondo de los subcontenedores (opcional) */
+.subcontenedor4{
+    display: flex;
+    background-color: #f3f1ed;
+    height: 20vh;
+    width: 15vw;
+    flex-direction: column;
+    flex-wrap: wrap; 
 }
-.subcontenedor8 {
-    flex: 1;
-    height: 80vh;
-    width: 60vh; /* Altura de los subcontenedores (ajusta según sea necesario) */ /* Margen entre los subcontenedores */
-    margin-top: 10%;
-    margin-left: 20%; 
-  /* Color de fondo de los subcontenedores (opcional) */
+.subcontenedor5{
+    display: flex;
+    background-color: #f3f1ed;
+    height: 20vh;
+    width: 25vw;
+    flex-direction: column;
+    flex-wrap: wrap; 
 }
-.subcontenedor8 img {
-    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
-    height: 100%; /* La imagen ocupará el 100% del alto del contenedor */
-    object-fit: cover; /* Escalar la imagen para que cubra el contenedor */
+.subcontenedor6{
+    display: flex;
+    background-color: #f3f1ed;
+    margin-left: 5%;
+    height: 40vh;
+    width: 40vw;
+    flex-wrap: wrap; 
 }
 @media (max-width: 768px) {
     .left-menu,
@@ -186,54 +178,58 @@ body {
     }
     .contenedor1 {
         flex-direction: row;
-        width: 100%;
         height: 40%;
-    }
-
-    .contenedor2  {
-        flex-direction: row;
         width: 100%;
-        height: 160%;
+    
     }
-    .contenedor3{
+    .contenedor2{    
+        flex-direction: row;
+        height: 170%;
+        width: 100%;
+    }
+    .subcontenedor1{
+        margin-top: 0;
+        margin-left: 0;
         flex-direction: row;
         width: 100%;
         height: 50%;
     }
+    .subcontenedor2{
+        margin-top: 0;
+        margin-left: 0;
+        flex-direction: row;
+        width: 100%;
+        height: 60%
 
-    .subcontenedor1{
-        width: 100%;
+    }
+    .subcontenedor3{
         margin-top: 0;
         margin-left: 0;
-
-    }
-    .subcontenedor2 {
+        flex-direction: row;
         width: 100%;
+        height: 40%;
+        
+    }
+    .subcontenedor4,.subcontenedor5{
         margin-top: 0;
         margin-left: 0;
-        height: 55%;
-    }
-    .producto {
-        width: 20%;
-    }
-    .descripcion {
-        width: 75%;
-    }
-    .descripcion h2 {
-        font-family: "Playfair Display", serif; 
-        font-size: 18px; 
-    }
-    .subcontenedor2,.subcontenedor7{
-        margin-left: 0;
-        margin-top: 30%;
-        flex-direction: column;
-        width: 50%;
-        height: 100%;
-    }
-    .subcontenedor8{
-        margin-left: 0;
-        margin-top: 0;
+        flex-direction: row;
         width: 100%;
-        height: 100%;
+        height: 50%;
+    }
+    .subcontenedor6{
+        flex-direction: row;
+        height: 50%;
+        width: 100%;
+    }
+    .subcontenedor5 h3{
+        font-family: "Times New Roman", serif;
+        color: #6d534c;
+        font-size: 17px;
+    }
+    .subcontenedor6 h3{
+        font-family: "Times New Roman", serif;
+        color: #6d534c;
+        font-size: 14px;
     }
 }

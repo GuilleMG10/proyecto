@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f8ff;
+}
+
+.flower-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.flower {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInOut 5s ease-in-out infinite;
+    transform: rotate(180deg); /* Aquí aplicamos la rotación de 180 grados */
+}
+
+.petal {
+    position: absolute;
+    width: 20px;
+    height: 50px;
+    background-color: var(--petal-color);
+    border-radius: 50%;
+}
+
+.p1 { transform: rotate(0deg) translateX(15px); }
+.p2 { transform: rotate(45deg) translateX(15px); }
+.p3 { transform: rotate(90deg) translateX(15px); }
+.p4 { transform: rotate(135deg) translateX(15px); }
+.p5 { transform: rotate(180deg) translateX(15px); }
+.p6 { transform: rotate(225deg) translateX(15px); }
+.p7 { transform: rotate(270deg) translateX(15px); }
+.p8 { transform: rotate(315deg) translateX(15px); }
+
+.center {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--center-color);
+    border-radius: 50%;
+}
+
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+    overflow: hidden; /* Para evitar barras de desplazamiento por flores grandes */
+}
+
+.random-flower-container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.random-flower {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    position: relative;
+}
+
+.random-petal {
+    width: 45px;
+    height: 90px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0 100%;
+}
+
+.random-p1 { transform: translate(-50%, -50%) rotate(0deg); }
+.random-p2 { transform: translate(-50%, -50%) rotate(36deg); }
+.random-p3 { transform: translate(-50%, -50%) rotate(72deg); }
+.random-p4 { transform: translate(-50%, -50%) rotate(108deg); }
+.random-p5 { transform: translate(-50%, -50%) rotate(144deg); }
+.random-p6 { transform: translate(-50%, -50%) rotate(180deg); }
+.random-p7 { transform: translate(-50%, -50%) rotate(216deg); }
+.random-p8 { transform: translate(-50%, -50%) rotate(252deg); }
+.random-p9 { transform: translate(-50%, -50%) rotate(288deg); }
+.random-p10 { transform: translate(-50%, -50%) rotate(324deg); }
+
+/* Agrega las siguientes clases para las animaciones */
+@keyframes fadeInRandomPetal {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutRandomPetal {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeInRandomFlower {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutRandomFlower {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.random-petal {
+    /* Agrega una animación de entrada a los pétalos */
+    animation: fadeInRandomPetal 0.5s ease-in-out both;
+}
