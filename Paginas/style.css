@@ -84,7 +84,7 @@ body {
 .random-petal {
     width: 45px;
     height: 90px;
-    background-color: black;
+    background-color: red;
     border-radius: 50%;
     position: absolute;
     top: 50%;

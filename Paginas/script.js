@@ -77,7 +77,7 @@ function createRandomFlowers() {
     }
 
     // Número máximo de flores a crear simultáneamente (entre 1 y 5)
-    const maxRandomFlowers = Math.ceil(Math.random() * 5 + 1);
+    const maxRandomFlowers = Math.ceil(Math.random() * 4 + 1);
     const randomFlowerSize = 100; // Tamaño de la flor
 
     // Arrays para almacenar las posiciones de las flores existentes
@@ -147,5 +147,5 @@ document.addEventListener("DOMContentLoaded", () => {
     setInterval(() => {
         console.log("Generating random flowers...");
         createRandomFlowers();
-    }, 1000); // Nuevas flores aleatorias cada 1 segundo
+    }, 3000); // Nuevas flores aleatorias cada 1 segundo
 });
